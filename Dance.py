@@ -7,19 +7,12 @@ while i < 2:
     turnBy(180)
     i = i + 1
 
-forward(s, 1)
-backward(s, 1)
-turnBy(90)
-forward(s,1)
+forward(s, 1.4)
+backward(s, 1.4)
+turnBy(80)
+forward(s, 1.2)
 
-j = 0
-while j < 2:
-    turnBy(180)
-    j = j + 1
-
-backward(s, 2)
-
-k = 0
-while k < 2:
-    turnBy(180)
-    k = k + 1
+turnLeft(s, 1.9)
+turnLeft(s, 2.1)
+    
+backward(s, 1.4)
