@@ -107,28 +107,31 @@ while avgX != -1:
     picture = takePicture()
     show(picture)
     avgX = findColorSpot(picture, color)
+    print(avgX)
     
     if avgX == 0:
         turnLeft(1, 1)    
                
     elif avgX > 128:
-        while avgX < 123 and avgX > 131:
+        while (avgX < 88 or avgX > 168) and avgX != -1:
             turnBy(-10)
             picture = takePicture()
             avgX = findColorSpot(picture, color)
+            print(avgX)
         forward(1, 1)
                         
     elif avgX < 128:
-        while avgX < 123 and avgX > 131:
+        while (avgX < 88 or avgX > 168) and avgX != -1:
             turnBy(10)
             picture = takePicture()
             avgX = findColorSpot(picture, color)
+            print(avgX)
         forward(1, 1)
     
-    elif avgX > 123 and avgX < 131:
-        forward(1, 1)    
-    
-    #secondary while loops may not be working
+    elif avgX > 88 and avgX < 168:
+        forward(1, 1)
+                      
+stop()
 
 
 
