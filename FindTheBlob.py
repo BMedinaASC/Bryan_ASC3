@@ -4,7 +4,7 @@ from random import *
 
 width = 500
 height = 500
-sim = Simulation("Maze World", width, height, Color("gray"))
+sim = Simulation("Maze World", width, height, Color("Orange"))
 
 #outside walls
 sim.addWall((10, 10), (490, 20), Color("black"))
