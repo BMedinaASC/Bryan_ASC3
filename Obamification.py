@@ -10,7 +10,7 @@ Yellow = makeColor(252, 227, 166)
 
 for pixel in getPixels(picture):
     
-    gray = getBlue(pixel)
+    gray = getGreen(pixel)
     
     if gray > 180:
         setColor(pixel, Yellow)
