@@ -9,9 +9,9 @@ if xChange == 0:
     while yChange == 0:
         yChange = randrange(-2, 3)
 
-elif xChange == -2 or 2:
+elif xChange == -2 or xChange == 2:
     yChange = randrange(-2, 3)
-    while yChange == -2 or 2:
+    while yChange == -2 or xChange == 2:
         yChange = randrange(-2, 3)
         
 else:
