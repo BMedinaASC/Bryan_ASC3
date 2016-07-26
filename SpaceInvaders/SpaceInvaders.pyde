@@ -27,9 +27,7 @@ def initial_invaders():
     x += xChange    
     if 30 >= x >= 500:
         xChange*=-1
-        
      
-          
     for j in range(11):
         y = 30
         for k in range(5):
