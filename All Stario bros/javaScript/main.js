@@ -13,5 +13,8 @@ function setup()
 
 function draw()
 {
-	background('');
+	background(120, 0, 120);
+	var floor = createSprite(10, 550, 2048, 30);
+	floor.shapeColor = color(139,69,19);
+	drawSprites();
 }
